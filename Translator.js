@@ -1,17 +1,11 @@
-// Last time updated at Dec 31, 2016, 10:54:23
-
-// Muaz Khan      - www.MuazKhan.com
-// MIT License    - www.WebRTC-Experiment.com/licence
-
-// Source Code    - github.com/muaz-khan/Translator
-// Demo           - www.webrtc-experiment.com/Translator
+ 
 
 function Translator() {
     this.voiceToText = function(callback, language) {
         initTranscript(callback, language);
     };
 
-    this.speakTextUsingRobot = function(text, args) {
+  /*  this.speakTextUsingRobot = function(text, args) {
         args = args || { };
 
         if (!args.amplitude) args.amplitude = 100;
@@ -24,6 +18,7 @@ function Translator() {
 
         Speaker.Speak(text, args);
     };
+    
 
     this.speakTextUsingGoogleSpeaker = function(args) {
         var textToSpeak = args.textToSpeak;
@@ -48,6 +43,7 @@ function Translator() {
             audio.play();
         }
     };
+    */
 
     this.translateLanguage = function(text, config) {
         config = config || { };
@@ -164,7 +160,7 @@ function Translator() {
         recognition.start();
     }
 
-    var self = this;
+ /*   var self = this;
     self.processInWebWorker = function(args) {
         console.log('Downloading worker file. Its about 2MB in size.');
 
@@ -245,7 +241,7 @@ function Translator() {
 
             speakWorker.postMessage({ text: text, args: _args });
         }
-    };
+    }; */
     
     var Google_Translate_API_KEY = 'AIzaSyDVI3s5HgSDjsUXyZ02I7CrPVbTRaNG-1Y';
 }
