@@ -5,7 +5,7 @@ function Translator() {
         initTranscript(callback, language);
     };
 
-    this.speakTextUsingRobot = function(text, args) {
+  /*  this.speakTextUsingRobot = function(text, args) {
         args = args || { };
 
         if (!args.amplitude) args.amplitude = 100;
@@ -43,7 +43,7 @@ function Translator() {
             audio.play();
         }
     };
-     
+    */ 
 
     this.translateLanguage = function(text, config) {
         config = config || { };
@@ -160,7 +160,7 @@ function Translator() {
         recognition.start();
     }
 
-    var self = this;
+  /*  var self = this;
     self.processInWebWorker = function(args) {
         console.log('Downloading worker file. Its about 2MB in size.');
 
@@ -193,8 +193,9 @@ function Translator() {
                     if (args.onWorkerFileDownloadEnd) args.onWorkerFileDownloadEnd();
                     return;
                 }
+                */
 
-                function encode64(data) {
+            /*    function encode64(data) {
                     var BASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
                     var PAD = '=';
                     var ret = '';
@@ -241,7 +242,7 @@ function Translator() {
 
             speakWorker.postMessage({ text: text, args: _args });
         }
-    };  
+    };   */
     
     var Google_Translate_API_KEY = 'AIzaSyDVI3s5HgSDjsUXyZ02I7CrPVbTRaNG-1Y';
 }
