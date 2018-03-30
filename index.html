@@ -311,9 +311,9 @@
             localStorage.setItem('textarea-to', this.value);
         };
         
-        document.getElementById('robot-voice').onchange = function() {
+    /*    document.getElementById('robot-voice').onchange = function() {
             localStorage.setItem('robot-checked', this.checked + '');
-        };
+        }; */
 
         function localStorageGetItem() {
             if(localStorage.getItem('convert-from')) {
@@ -332,12 +332,12 @@
                 textareaTo.value = localStorage.getItem('textarea-to');
             }
             
-            if(localStorage.getItem('robot-checked')) {
+           /* if(localStorage.getItem('robot-checked')) {
                 document.getElementById('robot-voice').checked = localStorage.getItem('robot-checked') === 'true';
-            }
+            } */
         }
 
-        localStorageGetItem();
+     //   localStorageGetItem();
     </script>
      
     <!-- commits.js is useless for you! -->
