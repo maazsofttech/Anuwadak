@@ -244,5 +244,5 @@ function Translator() {
         }
     };   */
     
-    var Google_Translate_API_KEY = 'AIzaSyD1ObaZI9aB3ZWyPJ9KTaPMOoiuzkt1GLI';
+    var Google_Translate_API_KEY = 'AIzaSyDVJOCx2HvcMfY3zFoDIGSOf9DiRIv0TrI';
 }
