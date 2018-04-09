@@ -3,7 +3,7 @@
 function Translator() {
     this.voiceToText = function(callback, language) {
         initTranscript(callback, language);
-    };
+    };  
 
   /*  this.speakTextUsingRobot = function(text, args) {
         args = args || { };
